@@ -1,11 +1,7 @@
 package main;
 
-import beans.Student;
-import main.student.Config;
 import util.InputUtil;
 import util.StudentUtil;
-
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
