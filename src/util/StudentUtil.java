@@ -18,7 +18,7 @@ public class StudentUtil {
         }
         for(int i=0; i<Config.students.length; i++){
             Student st = Config.students[i];
-            System.out.println(st.getFullInfo());
+            System.out.println(i+1+"."+st.getFullInfo());
         }
     }
     public static void registerStudents(){

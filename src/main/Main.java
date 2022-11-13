@@ -1,7 +1,11 @@
 package main;
 
+import beans.Student;
+import main.student.Config;
 import util.InputUtil;
 import util.StudentUtil;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,6 +23,12 @@ public class Main {
                 StudentUtil.printAllRegisteredStudents();
             } else if (menu == 3) {
                 StudentUtil.findStudentsAndPrint();
+            }else if (menu ==4){
+                StudentUtil.printAllRegisteredStudents();
+                int i = InputUtil.requireNumber("Which student you want to edit?");
+                System.out.println("Please enter new data");
+                Student s =StudentUtil.fillStudent();
+                Config.students[i-1]=s;
             }
 
 
